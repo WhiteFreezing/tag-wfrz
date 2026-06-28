@@ -1,0 +1,28 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base {
+  html { color-scheme: dark; }
+  body { @apply bg-ink text-text antialiased font-sans;
+    background-image:
+      radial-gradient(circle at 85% -10%, rgba(52,211,153,.10), transparent 60%),
+      radial-gradient(circle at -5% 110%, rgba(34,211,238,.08), transparent 55%);
+  }
+  ::selection { background: theme('colors.brand.DEFAULT'); color: #05221c; }
+  code, pre { @apply font-mono; }
+}
+@layer components {
+  .card { @apply rounded-2xl bg-surface border border-border/70; }
+  .input { @apply w-full rounded-lg bg-muted border border-border/70 px-3 py-2.5 text-sm
+    text-text placeholder:text-dim focus:outline-none focus:border-brand
+    focus:ring-2 focus:ring-brand/30 transition; }
+  .input-mono { @apply font-mono; }
+  .chip { @apply px-3 py-1.5 rounded-md text-xs font-semibold bg-muted border border-border cursor-pointer hover:bg-border transition select-none; }
+  .chip-on { @apply !bg-brand/10 !text-brand !border-brand/60; }
+  .btn-brand { @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg
+    text-sm font-bold bg-gradient-to-br from-brand to-accent-cyan text-ink hover:opacity-95 transition active:scale-[0.98] shadow-[0_6px_18px_rgba(52,211,153,.25)]; }
+}
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #2a2e36; border-radius: 8px; }
+.mc-text { text-shadow: 1px 1px 0 rgba(0,0,0,.55); }
+.mc-text .underline-mc { text-decoration: underline; }
+.mc-text .strike-mc { text-decoration: line-through; }
+.mc-text .us-mc { text-decoration: underline line-through; }
