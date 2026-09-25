@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tag Studio · tag.wfrz.eu",
+  title: "Tag Studio · wfrz.eu/tag",
   description: "MC chat tag generator — solid / gradient / rainbow farby, štýly, zátvorky. Skopíruj reťazec a vlož cez /tag shop.",
 };
 

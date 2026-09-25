@@ -1,4 +1,4 @@
-# Tag Studio — tag.wfrz.eu
+# Tag Studio — wfrz.eu/tag
 
 MC chat tag generator. Solid / gradient / rainbow farby, štýly (bold,
 italic, underline, strike, magic), zátvorky. Live preview a 1:1
